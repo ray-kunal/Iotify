@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+}
+.arrow-div {
+  position: relative;
+  padding: 10px 20px;
+  border-left: 4px solid black; 
+  background: lightblue;
+  display: inline-block; 
+}
+
+
+.arrow-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px; 
+  width: 0;
+  height: 100%; 
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 20px solid lightblue;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
