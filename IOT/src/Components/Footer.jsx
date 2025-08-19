@@ -8,7 +8,8 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-bold mb-3">IoTify</h2>
           <p className="text-sm text-blue-100">
-            Innovate. Build. Deliver.  
+            Innovate. Build. Deliver.
+            <br />
             Making IoT accessible for every student.
           </p>
         </div>
