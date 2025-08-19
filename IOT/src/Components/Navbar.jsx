@@ -1,7 +1,7 @@
-// Navbar.jsx
 import React, { useEffect, useRef, useState } from "react";
 import { User, AlignJustify } from "lucide-react";
 import Sidebar from "./Sidebar";
+import {Link} from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -37,9 +37,9 @@ export default function Navbar() {
   return (
     <div className="relative z-30">
       <div className="flex items-center w-full h-16 bg-green-700 border-r-4 border-r-black">
-        <div className="h-full flex items-center justify-center px-4 z-10">
+        <Link to="/login" className="h-full arrow-div flex items-center justify-center px-4 z-10">
           <User size={32} className="cursor-pointer text-white" />
-        </div>
+        </Link>
         <div className="flex-1 text-center text-2xl font-bold text-white">IoTify</div>
         <div
           className="relative m-2"

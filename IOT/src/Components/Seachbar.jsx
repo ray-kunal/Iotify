@@ -37,7 +37,7 @@ export default function SearchBar() {
     <div className="w-full max-w-4xl p-4 mx-auto">
       <div ref={searchRef} className="relative w-full lg:w-2/3 mx-auto">
         <div className="relative">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none z-10">
             <Search className="h-5 w-5 text-gray-500"/>
           </div>
           <input 
