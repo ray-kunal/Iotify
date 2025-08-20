@@ -5,6 +5,7 @@ import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Contact from './Pages/Contact';
 import Careers from './Pages/Careers';
+import Components from './Pages/Components';
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/careers" element={<Careers />} />
+      <Route path='/buy-components' element={<Components />} />
      </Routes>
     </BrowserRouter>
   )

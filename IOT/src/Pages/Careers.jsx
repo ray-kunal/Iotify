@@ -20,7 +20,6 @@ function CareersForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Career Form Submitted:", formData);
-    // you can send formData to backend here
   };
 
   return (
@@ -35,7 +34,6 @@ function CareersForm() {
             Careers Application
           </h2>
 
-          {/* Name */}
           <div className="mb-4">
             <label
               htmlFor="name"
@@ -56,7 +54,6 @@ function CareersForm() {
             </div>
           </div>
 
-          {/* Email */}
           <div className="mb-4">
             <label
               htmlFor="email"
@@ -77,7 +74,6 @@ function CareersForm() {
             </div>
           </div>
 
-          {/* Resume Upload */}
           <div className="mb-6">
             <label
               htmlFor="resume"
